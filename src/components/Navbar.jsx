@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
@@ -11,15 +11,15 @@ function Navbar() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  text-primary rounded-box w-52">
-        <li><a>Discover</a></li>
-        <li><a>Vault</a></li>
-        <li><a>Pods</a></li>
-        <li><a>Hive</a></li>
+        <li><Link to='/'>Discover</Link></li>
+        <li><Link to="/vault">Vault</Link ></li>
+        <li><Link to="/">Pods</Link ></li>
+        <li><Link to="/">Hive</Link ></li>
       </ul>
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">PeerLearn</a>
+    <Link to="/" className="btn btn-ghost text-xl">PeerLearn</Link >
   </div>
   <div className="navbar-end">
     <button className="btn btn-ghost btn-circle">
@@ -39,13 +39,14 @@ function Navbar() {
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-primary rounded-box w-52">
         <li>
-          <a className="justify-between">
+          <Link to="/profile" className="justify-between">
             Profile
             <span className="badge">New</span>
-          </a>
+          </Link >
         </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        <li><Link to="/notes">My Notes</Link ></li>
+        <li><Link to="/">Settings</Link ></li>
+        <li><Link to="/login">Logout</Link ></li>
       </ul>
 </div>
   </div>
