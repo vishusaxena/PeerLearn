@@ -13,7 +13,7 @@ function Navbar() {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  text-primary rounded-box w-52">
         <li><Link to='/'>Discover</Link></li>
         <li><Link to="/vault">Vault</Link ></li>
-        <li><Link to="/">Pods</Link ></li>
+        <li><Link to="/pods">Pods</Link ></li>
         <li><Link to="/">Hive</Link ></li>
       </ul>
     </div>

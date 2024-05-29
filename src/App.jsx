@@ -8,7 +8,8 @@ import {  Route,  Routes } from 'react-router-dom';
 import Profile from './components/Profile'
 import Notes  from './components/Notes'
 import Vault  from './components/Vault'
-
+import Pods  from './components/Pods'
+import Podsdetails  from './components/Podsdetails'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Route path="/profile"  element= {<Profile/>} />
           <Route path="/notes"  element= {<Notes/>} />
           <Route path="/vault"  element= {<Vault/>} />
+          <Route path="/pods"  element= {<Pods/>} />
+          <Route path="/podsdetails" element={<Podsdetails/>} />
+
         </Routes>
         <Footer/>
       </div>
